@@ -69,3 +69,5 @@ export const getTimeline = () => loadJSON('timeline.json').then((d) => expect(d,
 export const getPantheon = () =>
   loadJSON('pantheon.json').then((d) => expect(d.panteao, isArray, 'pantheon.json', 'panteao'));
 export const getRaces = () => loadJSON('races.json').then((d) => expect(d.racas, isArray, 'races.json', 'racas'));
+export const getRelations = () =>
+  loadJSON('relationships.json').then((d) => expect(d, (v) => isArray(v.colecoes), 'relationships.json', 'colecoes'));

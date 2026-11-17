@@ -17,6 +17,7 @@ export async function initPolitics(section) {
 /* ---------- abas ---------- */
 function setupTabs(section) {
   let timelineStarted = false;
+  let relationsStarted = false;
   const panels = $$('.pp', section);
   const show = (i) => {
     $$('#pt button', section).forEach((b, j) => b.classList.toggle('on', j == i));
@@ -29,6 +30,16 @@ function setupTabs(section) {
           timelineStarted = false;
           console.error(err);
           panels[2].replaceChildren(h('p', { class: 'sub' }, 'Não foi possível carregar a linha do tempo.'));
+        });
+    }
+    if (i == 3 && !relationsStarted) {
+      relationsStarted = true;
+      import('./relations.js')
+        .then((m) => m.initRelations(panels[3]))
+        .catch((err) => {
+          relationsStarted = false;
+          console.error(err);
+          panels[3].replaceChildren(h('p', { class: 'sub' }, 'Não foi possível carregar os vínculos.'));
         });
     }
   };

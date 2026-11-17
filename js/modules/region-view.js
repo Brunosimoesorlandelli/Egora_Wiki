@@ -115,12 +115,12 @@ function buildTabs(region, linkify) {
 
 /* ---------- eventos da página de região ---------- */
 $('.x', view).addEventListener('click', () => {
-  location.hash = 'regioes';
+  if (!location.hash.startsWith('#p-')) location.hash = 'regioes';
 });
 
 // Modo Mestre alternado com a página aberta: redesenha a região atual.
 on('master:change', () => {
-  if (modal.isOpen()) openRegion(location.hash.slice(1));
+  if (modal.isOpen() && !location.hash.startsWith('#p-')) openRegion(location.hash.slice(1));
 });
 
 // Efeito de paralaxe no banner
@@ -145,5 +145,5 @@ window.addEventListener('keydown', async (e) => {
   if (e.key == 'ArrowLeft') location.hash = lista[(i + lista.length - 1) % lista.length].id;
 });
 window.addEventListener('keydown', (e) => {
-  if (e.key == 'Escape' && modal.isOpen()) location.hash = 'regioes';
+  if (e.key == 'Escape' && modal.isOpen() && !location.hash.startsWith('#p-')) location.hash = 'regioes';
 });

@@ -23,7 +23,7 @@ export function createRegionCard(region) {
 export function createCharacterCard(character, region) {
   return h(
     'button',
-    { class: 'pc', style: { '--c': region.cor }, on: { click: goTo(character.regiao) } },
+    { class: 'pc', style: { '--c': region.cor }, on: { click: goTo('p-' + character.id) } },
     h('img', { loading: 'lazy', alt: character.nome, src: character.imagem }),
     h('div', null, h('b', null, character.nome), h('small', null, `${character.papel} · ${region.nome}`)),
   );

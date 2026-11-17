@@ -1,0 +1,82 @@
+{
+  "nota": "Árvores e grupos usam ids de characters.json; entradas com só 'nome' são personagens sem ficha (aparecem tracejadas).",
+  "tipos": {
+    "familia": { "nome": "Família", "cor": "#d9b45a" },
+    "cargo": { "nome": "Cargo / serviço", "cor": "#4fb6e0" },
+    "aliado": { "nome": "Aliança", "cor": "#6fcf7f" },
+    "grupo": { "nome": "Mesmo grupo", "cor": "#9a9486" }
+  },
+  "colecoes": [
+    {
+      "id": "sarabadh", "curto": "Sarabadh", "tipo": "familia", "regiao": "sar",
+      "nome": "Família elemental de Sarabadh",
+      "nota": "O sultão e sua família, cada membro ligado a um elemento.",
+      "arvore": {
+        "pais": ["sahib-abu-simbel", "akesa"],
+        "filhos": [
+          { "pais": ["zephyr"] }, { "pais": ["sigmis"] }, { "pais": ["azure"] },
+          { "pais": ["nuit"] }, { "pais": ["thawe"] }
+        ]
+      }
+    },
+    {
+      "id": "icemantle", "curto": "Icemantle", "tipo": "familia", "regiao": "kha",
+      "nome": "Família Icemantle",
+      "nota": "A casa real de Kham Buldor.",
+      "arvore": {
+        "pais": ["kistroli-icemantle"],
+        "filhos": [
+          { "pais": ["thizael-icemantle"] },
+          { "pais": [{ "nome": "Nornarlum Icemantle", "nota": "Filho do meio, desaparecido" }] },
+          { "pais": [{ "nome": "Hergin Icemantle", "nota": "Filho mais novo" }] }
+        ]
+      }
+    },
+    {
+      "id": "ravalon", "curto": "Ravalon", "tipo": "familia", "regiao": "rav",
+      "nome": "Família real Ravalon",
+      "nota": "A casa real de Ravalon.",
+      "arvore": {
+        "pais": ["arturus-ravalon", "guinevere-ravalon"],
+        "filhos": [
+          { "pais": ["mordred-ravalon"] }, { "pais": ["gaheris-ravalon"] }, { "pais": ["gareth-ravalon"] }
+        ]
+      }
+    },
+    {
+      "id": "comite", "curto": "Comitê", "tipo": "grupo", "regiao": "ned",
+      "nome": "O Comitê de Nédelamagie",
+      "nota": "Governo oligárquico e aristocrático da cidade-estado.",
+      "membros": ["corhim-cobblegem", "salomon-volcano", "urixius-ego-malexikas", "zuk-ridmore", "azure"]
+    },
+    {
+      "id": "mesa", "curto": "Távola Redonda", "tipo": "grupo", "regiao": "rav",
+      "nome": "Os 12 Cavaleiros da Távola Redonda",
+      "nota": "Reconhecidos pelo antigo rei com nobreza, fama e uma cadeira na Távola Redonda.",
+      "membros": ["mordred-ravalon", "gaheris-ravalon", "gareth-ravalon", "lancelot-prideheart", "boors-wiseguides", "tristam-sunchase", "perzival-lonedream", "kay-braveroar", "lamorak-lightdrifter", "bedivere-fiercewind", "gawain-silentstride", { "nome": "Galahad Dawnbreath" }]
+    },
+    {
+      "id": "nozumos", "curto": "Nozumos", "tipo": "grupo", "regiao": "iqu",
+      "nome": "Os Nozumos de Iqun",
+      "nota": "Representantes dos cinco Grandes Clãs.",
+      "membros": ["cho-seung-hyeon", "general-gao-feng", "zhan-guanyu", "mitsugu-kuma", "lulong"]
+    },
+    {
+      "id": "ermos", "curto": "Ermos", "tipo": "grupo", "regiao": "erm",
+      "nome": "Líderes tribais dos Ermos Meridionais",
+      "nota": "Quatro tribos, quatro líderes.",
+      "membros": ["korgak-gurukk", "ghoghoth-nornoth", "shokrun-gnash", "kuovea-geanatho"]
+    },
+    {
+      "id": "floresta", "curto": "Floresta", "tipo": "grupo", "regiao": "flo",
+      "nome": "Líderes da Floresta Prístina",
+      "nota": "Os líderes das tribos Aldatir e Kino.",
+      "membros": ["fenxalim-lolthastro", "bokbok"]
+    }
+  ],
+  "vinculos": [
+    { "a": "nyaxol-weiss", "b": "balchang-bohm", "tipo": "cargo", "ab": "Rei que aconselhou", "ba": "Conselheira" },
+    { "a": "drogor-konig", "b": "balchang-bohm", "tipo": "cargo", "ab": "Antecessor", "ba": "Sucessor" },
+    { "a": "balthazar-loch", "b": "dr-velhari-valzuun", "tipo": "aliado", "ab": "Auxiliado por", "ba": "Auxilia" }
+  ]
+}

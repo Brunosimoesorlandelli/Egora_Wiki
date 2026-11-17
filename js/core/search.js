@@ -20,7 +20,7 @@ async function buildIndex() {
   // Cada entrada: [tipo, título, subtítulo, href, texto extra pesquisável]
   const index = [];
   lista.forEach((r) => index.push(['Região', r.nome, r.lema, '#' + r.id, r.historia + ' ' + r.figuras]));
-  characters.forEach((c) => index.push(['Personagem', c.nome, c.papel + ' · ' + porId[c.regiao].nome, '#' + c.regiao]));
+  characters.forEach((c) => index.push(['Personagem', c.nome, c.papel + ' · ' + porId[c.regiao].nome, '#p-' + c.id]));
   pantheon.forEach((tier) =>
     tier.deuses.forEach((d) => index.push(['Deus', d.nome, (d.dominio || '') + ' · ' + tier.nivel, '#panteao'])),
   );

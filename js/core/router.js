@@ -11,6 +11,7 @@ import { emit } from './state.js';
 
 let token = 0; // descarta resultados de navegações antigas (cliques rápidos)
 let regionView = null;
+let characterView = null;
 
 async function route() {
   const mine = ++token;
@@ -34,7 +35,15 @@ async function route() {
     return;
   }
 
+  if (id.startsWith('p-')) {
+    characterView = characterView || (await import('../modules/character-view.js'));
+    if (mine !== token) return;
+    await characterView.openCharacter(id.slice(2));
+    return;
+  }
+
   if (regionView) regionView.closeRegion();
+  if (characterView) characterView.closeCharacter();
   await scrollToTarget(id, mine);
 }
 

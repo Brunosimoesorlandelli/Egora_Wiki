@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/components.css">
 <link rel="stylesheet" href="css/region.css">
+<link rel="stylesheet" href="css/character.css">
 <link rel="stylesheet" href="css/map.css">
 <link rel="stylesheet" href="css/themes.css">
 <link rel="stylesheet" href="css/print.css">
@@ -31,8 +32,8 @@ try { var t = localStorage.getItem('egt'); if (t === 'dark' || t === 'steam' || 
 <p class="cap"><a href="#mapa" style="color:var(--gold)">Explorar o mapa ↓</a></p></div></header>
 <section id="mapa"><h2>Mapa de Egora</h2><p class="sub">Clique em qualquer ponto de uma região para abrir a página dela. Passe o mouse para destacar o território, com aliados em verde e rivais em vermelho. Arraste para mover e use + e − (ou Ctrl + roda) para o zoom.</p><div class="bar" id="lay"></div><div class="map" id="map"><div class="zb"><button data-action="zoom-in" aria-label="Aproximar">+</button><button data-action="zoom-out" aria-label="Afastar">−</button><button data-action="zoom-reset" aria-label="Reiniciar">⟲</button><button data-action="toggle-borders" aria-label="Mostrar ou ocultar fronteiras" aria-pressed="true" title="Fronteiras">⬡</button></div><div class="tt" id="tt"></div><div class="mv" id="mv"><img alt="Mapa de Egora" src="assets/maps/egora.jpg"><svg id="tr" viewBox="0 0 1758 890" preserveAspectRatio="none" aria-hidden="true"><g id="bs"></g><g id="hl"></g></svg><svg id="ln" viewBox="0 0 1758 890" preserveAspectRatio="none"></svg></div></div><div class="leg" id="leg"></div></section>
 <section id="regioes"><h2>As Regiões</h2><p class="sub">Treze povos, reinos e ilhas disputando um mundo em transformação.</p><div class="grid" id="grid"></div></section>
-<section id="personagens"><h2>Personagens</h2><p class="sub">Rostos de Egora: reis, cavaleiros, líderes tribais e conspiradores. Clique para abrir a região do personagem.</p><div class="bar" id="cf"></div><div class="pg" id="cgrid"></div></section>
-<section id="politica"><h2>Política e Tempo</h2><p class="sub">Alianças, rivalidades e eventos que movem Egora.</p><div class="bar" id="pt"><button class="on" data-tab="0">Relações</button><button data-tab="1">Comparador</button><button data-tab="2">Linha do tempo</button></div><div class="pp" id="p0"></div><div class="pp" id="p1" hidden></div><div class="pp" id="p2" hidden></div></section>
+<section id="personagens"><h2>Personagens</h2><p class="sub">Rostos de Egora: reis, cavaleiros, líderes tribais e conspiradores. Clique para abrir a ficha do personagem.</p><div class="bar" id="cf"></div><div class="pg" id="cgrid"></div></section>
+<section id="politica"><h2>Política e Tempo</h2><p class="sub">Alianças, rivalidades e eventos que movem Egora.</p><div class="bar" id="pt"><button class="on" data-tab="0">Relações</button><button data-tab="1">Comparador</button><button data-tab="2">Linha do tempo</button><button data-tab="3">Vínculos</button></div><div class="pp" id="p0"></div><div class="pp" id="p1" hidden></div><div class="pp" id="p2" hidden></div><div class="pp" id="p3" hidden></div>
 <section id="panteao"><h2>O Panteão</h2><p class="sub">Acima de todos, <b>Ao</b>, o Deus Supremo.</p><div id="pan"></div></section>
 <section id="racas"><h2>Raças de Egora</h2><p class="sub">Todas as raças abaixo podem ser encontradas no cenário.</p><div class="tags" id="rc"></div></section>
 <section id="glossario"><h2>Glossário</h2><p class="sub">Termos e organizações do cenário.</p><div class="gls" id="gls"></div></section>
