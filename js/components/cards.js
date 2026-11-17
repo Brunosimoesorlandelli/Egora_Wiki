@@ -7,11 +7,12 @@ const goTo = (id) => () => {
 
 /** Card de região (usa a imagem da região como fundo). */
 export function createRegionCard(region) {
+  const imageUrl = new URL(region.imagem, document.baseURI).href;
   return h(
     'button',
     {
       class: 'card',
-      style: { '--c': region.cor, '--i': `url('${region.imagem}')` },
+      style: { '--c': region.cor, '--i': `url('${imageUrl}')` },
       on: { click: goTo(region.id) },
     },
     h('div', null, h('b', null, region.nome), h('small', null, region.lema)),

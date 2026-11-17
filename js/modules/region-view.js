@@ -39,10 +39,11 @@ function buildPage(region, { campos, lista, porId }, linkify) {
   const idx = lista.indexOf(region);
   const prev = lista[(idx + lista.length - 1) % lista.length];
   const next = lista[(idx + 1) % lista.length];
+  const imageUrl = new URL(region.imagem, document.baseURI).href;
 
   const banner = h(
     'div',
-    { class: 'ban', style: { '--bi': `url('${region.imagem}')`, '--acc': region.cor } },
+    { class: 'ban', style: { '--bi': `url('${imageUrl}')`, '--acc': region.cor } },
     h('div', null, h('div', { class: 'cap' }, region.capital), h('h2', null, region.nome), h('div', { style: { color: '#ddd' } }, region.lema)),
   );
 
