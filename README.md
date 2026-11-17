@@ -25,9 +25,11 @@
 - [Funcionalidades](#-funcionalidades)
 - [Tecnologias](#-tecnologias)
 - [Estrutura do repositório](#-estrutura-do-repositório)
+- [Arquitetura](#-arquitetura)
 - [Como executar localmente](#-como-executar-localmente)
 - [Publicação (GitHub Pages)](#-publicação-github-pages)
 - [Como editar o conteúdo](#-como-editar-o-conteúdo)
+- [Como estender o projeto](#-como-estender-o-projeto)
 - [Roadmap](#-roadmap)
 - [Contribuindo](#-contribuindo)
 - [Créditos e aviso legal](#-créditos-e-aviso-legal)
@@ -64,7 +66,7 @@ O mundo reúne **treze povos, reinos e ilhas** disputando um espaço em constant
 
 | Seção | O que oferece |
 |-------|---------------|
-| 🗺️ **Mapa** | Mapa interativo com marcadores clicáveis que abrem a região. Ao passar o mouse, mostra alianças (verde) e rivalidades (vermelho). Arraste para mover; use **+**, **−** ou **Ctrl + roda** para o zoom; **⟲** para resetar a visão |
+| 🗺️ **Mapa** | Mapa interativo com territórios recortados que abrem a região ao clicar. Ao passar o mouse, mostra alianças (verde) e rivalidades (vermelho). Arraste para mover; use **+**, **−** ou **Ctrl + roda** para o zoom; **⟲** para resetar a visão |
 | 🏰 **Regiões** | Os treze povos, reinos e ilhas do cenário |
 | 👤 **Personagens** | Reis, cavaleiros, líderes tribais e conspiradores, com atalho para a região de cada um |
 | ⚖️ **Política e Tempo** | **Relações** (alianças e rivalidades), **Comparador** e **Linha do tempo** de eventos |
@@ -72,7 +74,7 @@ O mundo reúne **treze povos, reinos e ilhas** disputando um espaço em constant
 | 🧝 **Raças** | Todas as raças encontradas no cenário |
 | 📖 **Glossário** | Termos e organizações do mundo |
 | ⌕ **Busca** | Pesquisa de conteúdo em toda a wiki |
-| 🎲 **Modo Mestre** | Visão voltada ao mestre <!-- TODO: descreva o que este modo mostra (ex.: informações restritas, segredos de campanha) --> |
+| 🎲 **Modo Mestre** | Mostra os segredos de cada região e um bloco de anotações pessoais, salvo no navegador, com exportação e importação em JSON |
 | ◐ **Tema** | Alternância de tema visual |
 | ♿ **Acessibilidade** | Link "Pular para o conteúdo" para navegação por teclado |
 
@@ -82,11 +84,13 @@ O mundo reúne **treze povos, reinos e ilhas** disputando um espaço em constant
 
 | Tecnologia | Uso |
 |------------|-----|
-| **HTML5** | Estrutura e conteúdo |
-| **CSS3** | Estilo, temas e identidade visual |
-| **JavaScript** | Mapa interativo, busca, modo Mestre, tema e navegação |
+| **HTML5** | Estrutura da página (`index.html`) |
+| **CSS3** | Estilo, temas e identidade visual, dividido por responsabilidade |
+| **JavaScript (ES6+ / ES Modules)** | Mapa interativo, busca, Modo Mestre, tema e navegação |
+| **JSON** | Todo o conteúdo da wiki (regiões, personagens, glossário etc.) |
+| **LocalStorage** | Tema escolhido, estado do Modo Mestre e anotações do mestre |
 
-Projeto 100% estático: roda no navegador, sem servidor, banco de dados ou etapa de build.
+Projeto 100% estático: roda no navegador, sem servidor próprio, banco de dados, framework ou etapa de build.
 
 ---
 
@@ -94,30 +98,67 @@ Projeto 100% estático: roda no navegador, sem servidor, banco de dados ou etapa
 
 ```
 Egora_Wiki/
-├── index.html    # Wiki completa (conteúdo, estilos e scripts)
-└── README.md     # Este arquivo
+├── index.html              # Estrutura da página e ponto de entrada (<script type="module">)
+├── README.md
+├── css/
+│   ├── global.css          # Variáveis, reset, tipografia, foco e movimento reduzido
+│   ├── layout.css          # Navegação, hero, seções e grades
+│   ├── components.css      # Cards, tags, abas, comparador, linha do tempo, busca, glossário
+│   ├── region.css          # Página de região em tela cheia e Modo Mestre
+│   ├── map.css             # Mapa interativo
+│   ├── themes.css          # Tema claro automático e temas manuais (claro / steampunk)
+│   └── print.css           # Impressão
+├── js/
+│   ├── main.js             # Ponto de entrada: só inicializa e coordena
+│   ├── core/               # Sistemas compartilhados
+│   │   ├── data.js         #   carregamento (fetch + cache) dos JSON
+│   │   ├── router.js       #   rotas por hash (#região, #seção, #g-termo)
+│   │   ├── loader.js       #   carregamento sob demanda das seções
+│   │   ├── navigation.js   #   botões da barra superior
+│   │   ├── search.js       #   índice e consulta da busca
+│   │   ├── theme.js        #   temas
+│   │   ├── state.js        #   estado global e eventos entre módulos
+│   │   ├── linkify.js      #   links automáticos (regiões e glossário) nos textos
+│   │   ├── reveal.js       #   animação de entrada ao rolar
+│   │   ├── storage.js      #   localStorage seguro
+│   │   └── dom.js          #   helpers de DOM (h(), s(), $)
+│   ├── modules/            # Funcionalidades da wiki (cada uma com initXxx)
+│   │   ├── map.js  regions.js  characters.js  politics.js  timeline.js
+│   │   ├── pantheon.js  races.js  glossary.js
+│   │   ├── region-view.js  # página de região
+│   │   └── master.js       # Modo Mestre
+│   └── components/         # Peças reutilizáveis de interface
+│       ├── modal.js  cards.js  sidebar.js  search-bar.js
+├── data/                   # Conteúdo (JSON)
+│   ├── regions.json  politics.json  characters.json  pantheon.json
+│   ├── races.json  glossary.json  timeline.json  map-territories.json
+├── assets/
+│   ├── maps/egora.jpg
+│   └── images/{regioes,personagens}/
+└── docs/RELATORIO_REFATORACAO.md
 ```
+
+---
+
+## 🏛️ Arquitetura
+
+- **Estrutura × apresentação × lógica × conteúdo** são independentes: HTML em `index.html`, estilos em `css/`, código em `js/`, conteúdo em `data/`.
+- **`main.js` só coordena.** Ele inicializa tema, busca, navegação, Modo Mestre, o roteador e o carregador de seções.
+- **Carregamento sob demanda.** Cada seção (`mapa`, `regioes`, `personagens`, `politica`, `panteao`, `racas`, `glossario`) tem seu módulo JS e seus JSON carregados com `import()` / `fetch()` só quando ela se aproxima da tela, ou quando um link, a busca ou o hash da URL levam até ela. A linha do tempo só carrega quando sua aba é aberta; a página de região, na primeira vez que uma região é aberta.
+- **Módulos independentes.** Eles não se importam entre si: conversam por `core/state.js` (eventos como `route` e `master:change`) e compartilham dados via `core/data.js`.
+- **Segurança.** O conteúdo dos JSON é inserido no DOM com `createElement` / `textContent` (helper `h()` de `core/dom.js`), nunca com `innerHTML`.
+- **Caminhos relativos.** Os JSON são resolvidos a partir de `import.meta.url`, então o site funciona em qualquer subdiretório (como `/Egora_Wiki/` no GitHub Pages).
 
 ---
 
 ## 🚀 Como executar localmente
 
-Basta um navegador moderno (Chrome, Edge, Firefox ou Safari).
-
-**Opção 1 — Abrir direto**
+Como o projeto usa **ES Modules** e `fetch()`, ele precisa ser servido por HTTP: abrir o `index.html` com duplo clique (`file://`) **não funciona** em navegadores modernos.
 
 ```bash
 git clone https://github.com/Brunosimoesorlandelli/Egora_Wiki.git
 cd Egora_Wiki
 
-# Windows: start index.html
-# macOS:   open index.html
-# Linux:   xdg-open index.html
-```
-
-**Opção 2 — Servidor local (recomendado ao desenvolver)**
-
-```bash
 # Python
 python -m http.server 8000
 
@@ -125,7 +166,7 @@ python -m http.server 8000
 npx serve .
 ```
 
-Acesse `http://localhost:8000`.
+Acesse `http://localhost:8000`. Nenhuma instalação de dependências é necessária.
 
 ---
 
@@ -144,13 +185,23 @@ Para publicar uma cópia própria (fork ou novo repositório):
 
 ## ✏️ Como editar o conteúdo
 
-Todo o conteúdo fica no `index.html`:
+O conteúdo fica em `data/*.json`; não é preciso mexer em código para editar textos.
 
-1. Abra o arquivo em um editor (por exemplo, o VS Code).
-2. Localize a seção desejada (regiões, personagens, glossário etc.).
-3. Edite ou adicione entradas seguindo o padrão das já existentes.
-4. Abra no navegador para conferir.
-5. Faça commit e push; o GitHub Pages atualiza o site automaticamente.
+| Para editar... | Arquivo | Observações |
+|---|---|---|
+| Regiões (lema, história, resumo, abas, segredos) | `data/regions.json` | `camposResumo` define a ordem do quadro "Resumo" |
+| Alianças e rivalidades | `data/politics.json` | `relacoes.<id>.aliados` / `inimigos` (ids de regiões); `diagrama` guarda os textos do diagrama |
+| Personagens | `data/characters.json` | `regiao` é o id de uma região; `imagem` aponta para `assets/images/personagens/` |
+| Panteão / Raças / Glossário / Linha do tempo | `pantheon.json`, `races.json`, `glossary.json`, `timeline.json` | Ids de região devem existir em `regions.json` |
+| Formato dos territórios do mapa | `data/map-territories.json` | Caminhos SVG por id de região |
+
+**Adicionar uma região nova**
+
+1. Acrescente o objeto em `data/regions.json` (com `id` único, `cor`, `mapa: {x, y}` e `imagem`) e a imagem em `assets/images/regioes/`.
+2. Acrescente `relacoes.<id>` em `data/politics.json`.
+3. Acrescente o caminho do território em `data/map-territories.json` para que ela apareça recortada no mapa.
+
+Depois de editar, confira no navegador (servidor local), faça commit e push; o GitHub Pages atualiza o site.
 
 ```bash
 git add .
@@ -160,12 +211,31 @@ git push origin main
 
 ---
 
+## 🧩 Como estender o projeto
+
+**Nova seção/funcionalidade**
+
+1. Crie a `<section id="minha-secao">` em `index.html`.
+2. Crie `js/modules/minha-secao.js` exportando `async function initMinhaSecao(section)`.
+3. Registre-a em `SECTIONS` no `js/core/loader.js`: `minhasecao: () => import('../modules/minha-secao.js').then(m => m.initMinhaSecao)`.
+4. Se tiver dados, crie `data/minha-secao.json` e um getter em `js/core/data.js`.
+
+**Novo componente reutilizável**
+
+Crie `js/components/meu-componente.js` exportando funções que **devolvem elementos DOM** (use `h()` de `core/dom.js`) e importe onde precisar. Estilos vão em `css/components.css`.
+
+**Comunicação entre módulos**
+
+Use `emit()` / `on()` de `core/state.js` em vez de importar um módulo do outro.
+
+---
+
 ## 🗺️ Roadmap
 
 - [ ] Adicionar capturas de tela ao README
-- [ ] Separar o `index.html` (≈ 2,5 MB) em `css/`, `js/`, `data/` e `assets/`, para facilitar a manutenção e acelerar o carregamento
-- [ ] Mover o conteúdo (regiões, personagens, glossário) para arquivos de dados (JSON), separando conteúdo e código
-- [ ] Otimizar imagens (compressão / WebP)
+- [x] Separar o `index.html` (≈ 2,5 MB) em `css/`, `js/`, `data/` e `assets/`
+- [x] Mover o conteúdo (regiões, personagens, glossário) para arquivos de dados (JSON)
+- [ ] Otimizar imagens (WebP) — hoje são JPEGs já pequenos, em arquivos separados com carregamento tardio
 - [ ] Revisar responsividade em celulares
 - [ ] Completar o conteúdo de todas as regiões, personagens e glossário
 - [ ] Domínio próprio

@@ -1,0 +1,814 @@
+{
+  "camposResumo": [
+    "Política",
+    "Tecnologia",
+    "Economia",
+    "Magia",
+    "Militar",
+    "Religião",
+    "Território",
+    "Bioma",
+    "Raça predominante"
+  ],
+  "regioes": [
+    {
+      "id": "sar",
+      "nome": "Império Sarabadh",
+      "lema": "Terra das dunas e do sultão",
+      "cor": "#e0707f",
+      "mapa": {
+        "x": 11,
+        "y": 51
+      },
+      "capital": "Capital: Uadjit",
+      "imagem": "assets/images/regioes/sar.jpg",
+      "bioma": "dunes",
+      "historia": [
+        "Um deserto escaldante, nascido da ira de Kossuth, que consumiu a região em lava. Silvanus, atendendo à súplica de uma jovem druida, apenas amenizou o estrago. Hoje o sultão Sahib Abu-Simbel governa com a ajuda de sua família elemental. A economia vive de minérios raros e artefatos perdidos nas dunas de Ashmarat, além de sedas, papiro e algodão.",
+        "Os Jarins, descendentes das areias com olhos dourados, domam serpentes e escorpiões gigantes. Da aliança com eles floresceu Finuari, cidade que ainda presta contas ao sultão."
+      ],
+      "figuras": [
+        "Sahib · Sultão (Luz)",
+        "Zephyr · Herdeiro (Ar)",
+        "Akesa · A grande mãe (Vida)",
+        "Sigmis · Primogênito guerreiro (Fogo)",
+        "Azure · A filha enigmática (Água)",
+        "Núit · A mais cobiçada (Terra)",
+        "Thawe · O rebelde desaparecido (Sombra)"
+      ],
+      "resumo": {
+        "Política": "Império",
+        "Tecnologia": "Medieval",
+        "Economia": "Alta",
+        "Magia": "Elitizada",
+        "Militar": "Numeroso, porém mediano",
+        "Religião": "Politeísta",
+        "Território": "Grande",
+        "Bioma": "Deserto",
+        "Raça predominante": "Não tem"
+      },
+      "segredos": []
+    },
+    {
+      "id": "rav",
+      "nome": "Reino de Ravalon",
+      "lema": "Terra de lendas e cavaleiros",
+      "cor": "#f0a15e",
+      "mapa": {
+        "x": 28,
+        "y": 19
+      },
+      "capital": "Capital: Galgan",
+      "imagem": "assets/images/regioes/rav.jpg",
+      "bioma": "plains",
+      "historia": [
+        "Dizem que um ravaloniano tem a força de um gigante, a astúcia de uma harpia e a coragem de um dragão. Desde a partição de suas terras, porém, o povo nunca mais foi o mesmo: a guerra, a traição do filho mais velho e a morte do rei Arturus deixaram marcas profundas. Hoje Ravalon se reergue, de olho em reconquistar terras e reputação.",
+        "Galgan ergue-se numa ilha de lago cercada por montanhas, com arquitetura vitoriana em mármore branco. Seus 12 Cavaleiros ocupam a Távola Redonda."
+      ],
+      "figuras": [
+        "Arturus Ravalon · Antigo rei (falecido)",
+        "Guinevere Ravalon · Rainha",
+        "Mordred, Gaheris e Gareth Ravalon · Cavaleiros da família real",
+        "Lancelot Prideheart · Cavaleiro",
+        "Perzival Lonedream · Cavaleiro",
+        "Bedivere Fiercewind · Cavaleiro (falecido)"
+      ],
+      "resumo": {
+        "Política": "Reino",
+        "Tecnologia": "Medieval",
+        "Economia": "Estável",
+        "Magia": "Armamentista",
+        "Militar": "Mediano, mas altamente habilidoso",
+        "Religião": "Politeísta",
+        "Território": "Pequeno",
+        "Bioma": "Planície temperada",
+        "Raça predominante": "Leoninos e Tabaxis"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "Os 12 Cavaleiros",
+          "introducao": "Reconhecidos pelo antigo rei com nobreza, fama e uma cadeira na Távola Redonda.",
+          "cartoes": [
+            {
+              "nome": "Mordred Ravalon",
+              "etiqueta": "Família real",
+              "texto": ""
+            },
+            {
+              "nome": "Gaheris Ravalon",
+              "etiqueta": "Família real",
+              "texto": ""
+            },
+            {
+              "nome": "Gareth Ravalon",
+              "etiqueta": "Família real",
+              "texto": ""
+            },
+            {
+              "nome": "Lancelot Prideheart",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Boors Wiseguides",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Tristam Sunchase",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Perzival Lonedream",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Kay Braveroar",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Lamorak Lightdrifter",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Bedivere Fiercewind",
+              "etiqueta": "Falecido",
+              "texto": ""
+            },
+            {
+              "nome": "Gawain Silentstride",
+              "etiqueta": "",
+              "texto": ""
+            },
+            {
+              "nome": "Galahad Dawnbreath",
+              "etiqueta": "",
+              "texto": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cal",
+      "nome": "Calim",
+      "lema": "A justiça cega de Tyr",
+      "cor": "#a58ad4",
+      "mapa": {
+        "x": 24,
+        "y": 32
+      },
+      "capital": "Capital: Anachtyr",
+      "imagem": "assets/images/regioes/cal.jpg",
+      "bioma": "plains",
+      "historia": [
+        "Nascida das cinzas de uma guerra, Calim une seu povo pela fé. Antes pertencia a Ravalon, mas após o golpe do grupo religioso “Os Vendados”, as terras devastadas foram tomadas pela Igreja de Tyr. A cidade cresceu ao redor da igreja, que hoje parece um castelo de grandes torres. Calim comercia pela costa e quer espalhar seus ideais pelo mundo.",
+        "A hierarquia vai do Ingrar, que deve cegar os próprios olhos para aplicar a justiça pura, aos 7 Justicares (cada um com o título de um pecado), Sacerdotes, Clérigos e Vendados, nome de todo fiel de Tyr."
+      ],
+      "figuras": [
+        "Magnus Morelli · O atual Ingrar",
+        "Os 7 Justicares · Guerreiros de identidade secreta"
+      ],
+      "resumo": {
+        "Política": "Teocracia",
+        "Tecnologia": "Medieval",
+        "Economia": "Estável",
+        "Magia": "Religiosa",
+        "Militar": "Mediano, mas altamente habilidoso",
+        "Religião": "Monoteísta (Tyr)",
+        "Território": "Pequeno",
+        "Bioma": "Planície temperada",
+        "Raça predominante": "Não tem"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "Hierarquia Tyrica",
+          "introducao": "A Igreja de Tyr segue uma filosofia regrada, refletida em seus fiéis.",
+          "cartoes": [
+            {
+              "nome": "Ingrar",
+              "etiqueta": "Líder",
+              "texto": "Arauto de Tyr no mundo. Ao assumir, cega os dois olhos para aplicar a justiça cega mais pura. O atual é Magnus Morelli."
+            },
+            {
+              "nome": "Justicares",
+              "etiqueta": "7 guerreiros",
+              "texto": "Escolhidos a dedo, cada um carrega o título de um pecado e “educa” quem o pratica. Quase todos têm identidade secreta."
+            },
+            {
+              "nome": "Sacerdotes",
+              "etiqueta": "Comando",
+              "texto": "Seguidores de maior influência, cada um comanda uma igreja do reino."
+            },
+            {
+              "nome": "Clérigos",
+              "etiqueta": "Pregadores",
+              "texto": "Fiéis autorizados a pregar, tratados como iguais até pelos vendados."
+            },
+            {
+              "nome": "Vendados",
+              "etiqueta": "Fiéis",
+              "texto": "Todos que seguem Tyr; o nome alude à justiça cega do deus."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dra",
+      "nome": "Reino de Drachenberg",
+      "lema": "Poder dracônico e castas",
+      "cor": "#f08a3c",
+      "mapa": {
+        "x": 30,
+        "y": 58
+      },
+      "capital": "Capital: Hoffnung",
+      "imagem": "assets/images/regioes/dra.jpg",
+      "bioma": "peaks",
+      "historia": [
+        "Há 25 anos era uma potência sob Balchang Böhm. Sem herdeiro, o trono foi decidido numa votação que muitos creem fraudada, e elegeu Drogor König, líder da Cromaguarda, que prega a superioridade dos draconatos. Ele impôs castas por raça: draconatos na nobreza, kobolds com acesso livre, as demais raças restritas ao primeiro piso da capital e os anões banidos. Há 10 anos o reino conquista territórios.",
+        "Segundo a mitologia, 10 dragões primordiais moldaram o mundo e originaram toda a magia: os metálicos (latão, bronze, cobre, prata, ouro) e os cromáticos (branco, preto, verde, azul, vermelho)."
+      ],
+      "figuras": [
+        "Drogor König · Rei",
+        "Nyaxol Weiss · Conselheira de Balchang",
+        "Balchang Böhm · Antigo rei (falecido)"
+      ],
+      "resumo": {
+        "Política": "Autoritarismo",
+        "Tecnologia": "Medieval",
+        "Economia": "Alta",
+        "Magia": "Representa poder",
+        "Militar": "Alto",
+        "Religião": "Monoteísmo imposto (Tiamat)",
+        "Território": "Grande",
+        "Bioma": "Montanhoso",
+        "Raça predominante": "Draconatos e Kobolds"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "Os 10 Dragões Primordiais",
+          "introducao": "Os metálicos transmitiram sabedoria aos outros seres; os cromáticos são selvagens, gananciosos e egoístas. Uns creem que os dragões se foram, outros que vivem entre nós em forma humanoide.",
+          "cartoes": [
+            {
+              "nome": "Dragão Branco",
+              "etiqueta": "Cromático",
+              "texto": "O mais fraco e mais selvagem dos cromáticos, mas de grande memória. Sopro glacial; vive em montanhas geladas e aprecia diamantes."
+            },
+            {
+              "nome": "Dragão Preto",
+              "etiqueta": "Cromático",
+              "texto": "Quarto mais poderoso e o mais cruel. Sopro ácido; emboscador, camufla-se em águas pantanosas. Gosta de moedas de ouro."
+            },
+            {
+              "nome": "Dragão Verde",
+              "etiqueta": "Cromático",
+              "texto": "Terceiro mais poderoso, territorial, vive em grandes florestas. Seu sopro ácido derrete até a melhor armadura. Aprecia esmeraldas, pinturas e esculturas."
+            },
+            {
+              "nome": "Dragão Azul",
+              "etiqueta": "Cromático",
+              "texto": "Segundo mais poderoso, o “demônio do deserto”. Faz viajantes alucinarem até a loucura e então os mata com uma rajada elétrica. Aprecia safiras."
+            },
+            {
+              "nome": "Dragão Vermelho",
+              "etiqueta": "Cromático",
+              "texto": "O maior e mais poderoso dos cromáticos. Cospe fogo, adora destruição e acumula tudo de valor numa caverna nas montanhas."
+            },
+            {
+              "nome": "Dragão de Latão",
+              "etiqueta": "Metálico",
+              "texto": "Luta em guerras por quem pagar melhor. Sopro de fogo e sopro sonolento; vive em planícies e desertos e aprecia utensílios feitos à mão."
+            },
+            {
+              "nome": "Dragão de Bronze",
+              "etiqueta": "Metálico",
+              "texto": "O Senhor dos mares, pesadelo dos piratas, tende à boa moral. Sopro de repulsão e sopro elétrico, este só para matar."
+            },
+            {
+              "nome": "Dragão de Cobre",
+              "etiqueta": "Metálico",
+              "texto": "Bem-humorado, usa a inteligência para zombar e humilhar oponentes. Sopro ácido e lentidão; vive em montanhas rochosas."
+            },
+            {
+              "nome": "Dragão de Prata",
+              "etiqueta": "Metálico",
+              "texto": "Sábio e desprendido de bens, prefere uma boa conversa. Não ajuda com força, mas com conhecimento. Sopros de gelo e paralisia."
+            },
+            {
+              "nome": "Dragão de Ouro",
+              "etiqueta": "Metálico",
+              "texto": "O único sem relatos físicos, só contos passados de geração em geração. Dizem ser o mais poderoso de todos."
+            }
+          ]
+        },
+        {
+          "titulo": "Castas da Cromaguarda",
+          "introducao": "Sob Drogor König, a nobreza e o acesso à capital dependem da raça.",
+          "cartoes": [
+            {
+              "nome": "Draconatos",
+              "etiqueta": "Nobreza",
+              "texto": "Os mais próximos dos dragões primordiais."
+            },
+            {
+              "nome": "Kobolds",
+              "etiqueta": "Acesso livre",
+              "texto": "Descendentes mais distantes, circulam pela cidade mas não entram na nobreza."
+            },
+            {
+              "nome": "Demais raças",
+              "etiqueta": "Primeiro piso",
+              "texto": "Tratadas como insignificantes, só acessam o primeiro piso da capital."
+            },
+            {
+              "nome": "Anões",
+              "etiqueta": "Banidos",
+              "texto": "Vistos como a raça a ser extinguida; proibidos de pisar na capital."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erm",
+      "nome": "Ermos Meridionais",
+      "lema": "Terras sem dono, sem rei",
+      "cor": "#b0674a",
+      "mapa": {
+        "x": 29,
+        "y": 75
+      },
+      "capital": "Terras tribais",
+      "imagem": "assets/images/regioes/erm.jpg",
+      "bioma": "dunes",
+      "historia": [
+        "Terras desérticas, semiáridas e cheias de fendas, onde poucos ousam pisar. Orcs, Bugbears, Hobgoblins e Goliaths prosperam pelo desafio, mas cada pessoa a mais significa menos recursos, e encontros entre tribos costumam acabar em guerra.",
+        "Rochedos (Orcs, Gruumsh): líder Korgak Gurukk. Carniceiros (Bugbears, Bane): líder Ghoghoth Nornoth. Escavadores (Hobgoblins, Shar): líder Shokrun Gnash. Filhos do Gelo (Goliaths, Tempus): líder Kuovea Geanatho."
+      ],
+      "figuras": [
+        "Korgak Gurukk · Rochedos",
+        "Ghoghoth Nornoth · Carniceiros",
+        "Shokrun Gnash · Escavadores",
+        "Kuovea Geanatho · Filhos do Gelo"
+      ],
+      "resumo": {
+        "Política": "Tribal",
+        "Tecnologia": "Idade da Pedra",
+        "Economia": "Baixa",
+        "Magia": "Receio",
+        "Militar": "Numeroso e habilidoso",
+        "Religião": "Um deus por tribo",
+        "Território": "Médio",
+        "Bioma": "Estepes",
+        "Raça predominante": "Orcs, Bugbears, Hobgoblins e Goliaths"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "As Tribos",
+          "introducao": "Cada tribo fixou-se num local dos Ermos.",
+          "cartoes": [
+            {
+              "nome": "Rochedos",
+              "etiqueta": "Orcs · Gruumsh",
+              "texto": "A tribo mais populosa; moldou uma montanha à imagem do primeiro líder para intimidar rivais. Líder: Korgak Gurukk, de um soco que entorta armadura de placas."
+            },
+            {
+              "nome": "Carniceiros",
+              "etiqueta": "Bugbears · Bane",
+              "texto": "Agressivos e engenhosos, aproveitam de madeira a carcaças. Líder: Ghoghoth Nornoth, impaciente, governa pelo medo."
+            },
+            {
+              "nome": "Escavadores",
+              "etiqueta": "Hobgoblins · Shar",
+              "texto": "Bases escavadas em montanhas, usam partes dos Bulletes para cavar. Engenharia invejada. Líder: Shokrun Gnash, que sobreviveu a Ghoghoth."
+            },
+            {
+              "nome": "Filhos do Gelo",
+              "etiqueta": "Goliaths · Tempus",
+              "texto": "A tribo mais isolada e pacífica, junto à parede de gelo ao norte, mas ótimos lutadores. Líder: Kuovea Geanatho, escolhida por consenso."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ned",
+      "nome": "Nédelamagie",
+      "lema": "Magia e invenção (inspirada na França)",
+      "cor": "#5ec2a0",
+      "mapa": {
+        "x": 37,
+        "y": 26
+      },
+      "capital": "Cidade-estado",
+      "imagem": "assets/images/regioes/ned.jpg",
+      "bioma": "plains",
+      "historia": [
+        "Uma cidade que prosperou misturando magia e tecnologia, famosa pela Escola de Magia Ridmore, fundada por Hadror Ridmore. Sua riqueza vem dos cristais mágicos das montanhas, que armazenam magia pura e alimentam invenções como a bateria mágica. Isso gera atrito com Kham Buldor.",
+        "Após abusos dos cristais, o Comitê criou os Makays (Oficiais, Escrivães, Investigadores e um Delegado), que usam armas de cristal como o Revólver AMC2.0 e o Mosquete ADF1.0."
+      ],
+      "figuras": [
+        "Corhim Cobblegem · Comitê, milionário excêntrico",
+        "Salomon Volcano · Comitê, Genasi de fogo lendário",
+        "Urixius “Ego” Malexikas · Comitê, herdeiro do Laboratoire de Mágie",
+        "Zuk Ridmore · Comitê, diretora da Ridmore",
+        "Azure · Comitê, emissária de Sarabadh"
+      ],
+      "resumo": {
+        "Política": "Oligarquia aristocrática",
+        "Tecnologia": "Renascentista",
+        "Economia": "Alta",
+        "Magia": "Regrada",
+        "Militar": "Exército mágico",
+        "Religião": "Politeísta",
+        "Território": "Médio",
+        "Bioma": "Planície temperada",
+        "Raça predominante": "Não tem"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "O Comitê",
+          "introducao": "Governo oligárquico e aristocrático da cidade-estado.",
+          "cartoes": [
+            {
+              "nome": "Corhim Cobblegem",
+              "etiqueta": "Mercador",
+              "texto": "Milionário excêntrico, dono de boa parte do setor mercantil. Brilhante e sem vaidade pela riqueza; defende-se com magia arcana e guarda-costas. Puxa as decisões para o lado racional."
+            },
+            {
+              "nome": "Salomon Volcano",
+              "etiqueta": "Genasi de fogo",
+              "texto": "O “filho do fogo”, lenda que sobreviveu a um dragão ancestral. Prefere o anonimato e a vida nômade; contribui com experiência e sabedoria."
+            },
+            {
+              "nome": "Urixius “Ego” Malexikas",
+              "etiqueta": "Herdeiro",
+              "texto": "Nobre de família tradicional, dono do Laboratoire de Mágie (antes CPRAMN). Egocêntrico, com uma casca contra o preconceito. O mais incisivo, atento à reputação da cidade."
+            },
+            {
+              "nome": "Zuk Ridmore",
+              "etiqueta": "Diretora",
+              "texto": "Filha adotiva de Hadror e diretora da Escola Ridmore. Serena e atenciosa; a mais maleável e solidária com as minorias."
+            },
+            {
+              "nome": "Azure",
+              "etiqueta": "Emissária",
+              "texto": "Vinda de Sarabadh para firmar a aliança. Introvertida e estrategista, tem ideias fortes sobre política e diplomacia, apesar dos boatos."
+            }
+          ]
+        },
+        {
+          "titulo": "Makays",
+          "introducao": "Força-tarefa criada pelo Comitê para fiscalizar, prevenir, investigar e controlar problemas mágicos, após os abusos dos cristais.",
+          "cartoes": [
+            {
+              "nome": "Oficiais",
+              "etiqueta": "Patrulha",
+              "texto": "Especialistas em combate contra magia; patrulham e intervêm em problemas da cidade."
+            },
+            {
+              "nome": "Escrivães",
+              "etiqueta": "Arquivo",
+              "texto": "Cuidam da burocracia, catalogam e estudam casos em busca de padrões."
+            },
+            {
+              "nome": "Investigadores",
+              "etiqueta": "Detecção mágica",
+              "texto": "Analisam cenas de crime atrás de provas físicas e arcanas, quase sempre à paisana."
+            },
+            {
+              "nome": "Delegado",
+              "etiqueta": "Comando",
+              "texto": "Comanda os Makays e pode exercer a função de qualquer outra classe."
+            },
+            {
+              "nome": "Revólver AMC2.0",
+              "etiqueta": "Arma de cristal",
+              "texto": "Canaliza um cristal em um disparo mágico único. Se falhar, pode explodir junto com a mão do usuário."
+            },
+            {
+              "nome": "Mosquete ADF1.0",
+              "etiqueta": "Arma de cristal",
+              "texto": "Rajada mais veloz e de maior alcance, com os mesmos riscos do cristal."
+            }
+          ]
+        },
+        {
+          "titulo": "Ridmore e cristais",
+          "introducao": "",
+          "cartoes": [
+            {
+              "nome": "Escola de Magia Ridmore",
+              "etiqueta": "Academia",
+              "texto": "A maior do mundo, fundada por Hadror Ridmore e hoje dirigida por Zuk. Ensina magia natural, interior, divina e demoníaca, com equipamentos de artífices."
+            },
+            {
+              "nome": "Cristais mágicos",
+              "etiqueta": "Recurso",
+              "texto": "Nas montanhas entre a cidade e Kham Buldor. Guardam magia pura e, refinados, viram baterias e outras invenções."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kha",
+      "nome": "Kham Buldor",
+      "lema": "Reino de gelo e forja",
+      "cor": "#f1d15a",
+      "mapa": {
+        "x": 38,
+        "y": 36
+      },
+      "capital": "Capital: Citadela Eviterna",
+      "imagem": "assets/images/regioes/kha.jpg",
+      "bioma": "frost",
+      "historia": [
+        "Um reino sólido como o gelo que o cerca, rico em minérios e lar dos melhores ferreiros, os anões. O rei Kistroli Icemantle governa com mão de ferro desde a morte de sua amada, e rumores dizem que está à beira da morte. Seus filhos: Thizael (herdeiro tradicionalista), Nornarlum (sumido pelo mundo) e Hergin (pacífico e reformista).",
+        "Os Insurgentes, que têm uma mão congelada como símbolo, querem impor a democracia para escolher um novo rei."
+      ],
+      "figuras": [
+        "Kistroli Icemantle · Rei",
+        "Thizael Icemantle · Primogênito",
+        "Nornarlum Icemantle · Filho do meio, desaparecido",
+        "Hergin Icemantle · Filho mais novo"
+      ],
+      "resumo": {
+        "Política": "Reino",
+        "Tecnologia": "Medieval",
+        "Economia": "Alta",
+        "Magia": "Cuidado",
+        "Militar": "Numeroso e habilidoso",
+        "Religião": "Monoteísta (Moradin)",
+        "Território": "Pequeno",
+        "Bioma": "Planície tundra",
+        "Raça predominante": "Anões"
+      },
+      "segredos": []
+    },
+    {
+      "id": "tot",
+      "nome": "Império Tototemoc",
+      "lema": "Os Emergidos do oceano",
+      "cor": "#e87fc0",
+      "mapa": {
+        "x": 50,
+        "y": 33
+      },
+      "capital": "Capital: Ixchel",
+      "imagem": "assets/images/regioes/tot.jpg",
+      "bioma": "waves",
+      "historia": [
+        "Os Tritões emergiram do fundo do mar para reduzir ou acabar com a exploração dos recursos mágicos, cujas consequências ferem o oceano. Ixchel é protegida por muralhas de água que ninguém atravessa. Os selos que prendem o Leviatã, monstro que as lendas dizem ter separado o continente, estão perdendo força.",
+        "A vinda dos Emergidos criou a pirataria, atrás de relíquias para o mercado negro, e a Patrulha Pérola, criada pela Zyanya para vigiar os mares."
+      ],
+      "figuras": [
+        "Adalyn Nagalnath · A Zyanya, imperatriz"
+      ],
+      "resumo": {
+        "Política": "Império",
+        "Tecnologia": "Renascentista",
+        "Economia": "Alta",
+        "Magia": "Ligação natural",
+        "Militar": "Alto",
+        "Religião": "Monoteísta (Mystra)",
+        "Território": "Médio",
+        "Bioma": "Planície tropical",
+        "Raça predominante": "Tritões"
+      },
+      "segredos": []
+    },
+    {
+      "id": "iqu",
+      "nome": "Iqun",
+      "lema": "Cinco clãs, cinco flores",
+      "cor": "#4fb6e0",
+      "mapa": {
+        "x": 49,
+        "y": 59
+      },
+      "capital": "Governada pelos Nozumos",
+      "imagem": "assets/images/regioes/iqu.jpg",
+      "bioma": "peaks",
+      "historia": [
+        "Os Nozumos, representantes dos Grandes Clãs, governam o país e se reúnem todo mês, nas vilas dos quatro clãs principais.",
+        "Shizukesa, o Lírio Azul: montanhas geladas, o clã mais tradicional. Ikari, a Lótus Vermelha: militarista. Shinrai, o Jasmim Amarelo: gemas e comércio marítimo. Ai, a Cerejeira Rosa: protege a magia das cerejeiras com as assassinas da Última Pétala. Nigami, a Tulipa Negra: exilado na Ilha Unmei após a tentativa de golpe de Rexicas."
+      ],
+      "figuras": [
+        "Ch’o Seung-Hyeon · Nozumo Shizukesa",
+        "General Gao Feng · Nozumo Ikari",
+        "Zhan Guanyu · Nozumo Shinrai",
+        "Mitsugu Kuma · Nozumo Ai",
+        "Lulong · Nozumo Nigami"
+      ],
+      "resumo": {
+        "Política": "Monarquia constitucional",
+        "Tecnologia": "Medieval",
+        "Economia": "Estável",
+        "Magia": "Sobrevivência",
+        "Militar": "Exército marcial",
+        "Religião": "Um deus por clã",
+        "Território": "Grande",
+        "Bioma": "Montanhoso",
+        "Raça predominante": "Humanos"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "Os Clãs",
+          "introducao": "Cada Nozumo responde pelo seu clã e por toda Iqun.",
+          "cartoes": [
+            {
+              "nome": "Shizukesa",
+              "etiqueta": "Lírio Azul · Lathander",
+              "texto": "Nas montanhas geladas, aquecido pelo esteatito; o clã mais tradicional e o primeiro a chegar. Nozumo: Ch’o Seung-Hyeon, pacífico e sábio, voz diplomática de Iqun."
+            },
+            {
+              "nome": "Ikari",
+              "etiqueta": "Lótus Vermelha · Tempus",
+              "texto": "Militarista, vive na parte tropical. Já dominou boa parte do país e quer expandir, mas respeita a aliança. Nozumo: o general leonino Gao Feng."
+            },
+            {
+              "nome": "Shinrai",
+              "etiqueta": "Jasmim Amarelo · Chauntea",
+              "texto": "Gemas das cavernas e comércio marítimo; a vila mais desenvolvida, base da família Guanyu. Nozumo: Zhan Guanyu, jovem herdeiro cercado de rumores."
+            },
+            {
+              "nome": "Ai",
+              "etiqueta": "Cerejeira Rosa · Sune",
+              "texto": "Vila em harmonia com as cerejeiras mágicas, protegida pelas kunoichis da Última Pétala. Nozumo: Mitsugu Kuma, gentil por fora, fria e zelosa por dentro."
+            },
+            {
+              "nome": "Nigami",
+              "etiqueta": "Tulipa Negra · sem fé",
+              "texto": "Exilado na Ilha Unmei após Rexicas matar dois Nozumos em reunião e morrer pelas mãos da Nozumo do clã Ai. Nozumo: Lulong, estrangeiro e revolucionário."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flo",
+      "nome": "Floresta Prístina",
+      "lema": "O labirinto mágico",
+      "cor": "#a9d36a",
+      "mapa": {
+        "x": 66,
+        "y": 40
+      },
+      "capital": "Floresta imensa",
+      "imagem": "assets/images/regioes/flo.jpg",
+      "bioma": "forest",
+      "historia": [
+        "Uma floresta mágica tão vasta que é um labirinto: só patrulheiros experientes acham a saída. A magia tornou criaturas perigosas em mortais. Quatro povos prosperam ali.",
+        "Tribo Aldatir (Elfos da Floresta, patrulhas mascaradas). Comunidade Kelcorin (Gnomos reclusos). Os Vandrare (Firbolgs nômades e simpáticos). Tribo Kino (Goblins caóticos que se comunicam por assobios)."
+      ],
+      "figuras": [
+        "Fen’Xalim Lolthastro · Líder Aldatir, o Gavião Branco",
+        "Bok’bok · Líder Kino, goblin impulsivo"
+      ],
+      "resumo": {
+        "Política": "Tribal",
+        "Tecnologia": "Idade da Pedra",
+        "Economia": "Baixa",
+        "Magia": "Respeito",
+        "Militar": "Baixo, limitado geograficamente",
+        "Religião": "Monoteísta (Silvanus)",
+        "Território": "Imenso",
+        "Bioma": "Floresta",
+        "Raça predominante": "Elfos, Gnomos, Firbolgs e Goblins"
+      },
+      "segredos": [],
+      "abas": [
+        {
+          "titulo": "Os Povos",
+          "introducao": "Quatro povos se adaptaram ao labirinto mágico.",
+          "cartoes": [
+            {
+              "nome": "Tribo Aldatir",
+              "etiqueta": "Elfos da Floresta",
+              "texto": "Casas nas copas ligadas por pontes. Patrulhas mascaradas, com ritual de 7 dias de sobrevivência. Líder: Fen’Xalim Lolthastro, o Gavião Branco."
+            },
+            {
+              "nome": "Comunidade Kelcorin",
+              "etiqueta": "Gnomos da Floresta",
+              "texto": "Reclusos, vivem em casinhas em cascos de árvores. Falam com pequenos animais e têm boa afinidade mágica."
+            },
+            {
+              "nome": "Os Vandrare",
+              "etiqueta": "Firbolgs nômades",
+              "texto": "Simpáticos, recebem estrangeiros e alertam sobre os perigos. Sabem se defender dos goblins, física e magicamente."
+            },
+            {
+              "nome": "Tribo Kino",
+              "etiqueta": "Goblins da Floresta",
+              "texto": "Caóticos e sorrateiros, andam em bandos e se comunicam por assobios. Casas esféricas nas partes sombrias. Líder: Bok’bok, impulsivo, mas ágil."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rig",
+      "nome": "Rigor Mortis",
+      "lema": "O inimigo do mundo",
+      "cor": "#9a9a9a",
+      "mapa": {
+        "x": 71,
+        "y": 75
+      },
+      "capital": "Região proibida",
+      "imagem": "assets/images/regioes/rig.jpg",
+      "bioma": "swamp",
+      "historia": [
+        "O Arsênio, metal tóxico que se expande ao contato com a água, contaminou o ar, a flora e a fauna, dando à região um aspecto pantanoso e grotesco. Os povos mutaram, e o Arsênio virou recurso para medicina, agricultura e construção.",
+        "Quem não se adapta vira Nefasto: morto-vivo racional, pálido e sem regeneração. Balthazar Loch os comanda, ajudado pelo Dr. Velhari Val’zuun, criador da Praga. O mundo vive uma guerra fria e ninguém comercia com a região."
+      ],
+      "figuras": [
+        "Balthazar Loch · Líder dos Nefastos",
+        "Dr. Velhari Val’zuun (Dr. V) · Cientista, criador da Praga"
+      ],
+      "resumo": {
+        "Política": "Autoritarismo",
+        "Tecnologia": "Renascentista",
+        "Economia": "Estável",
+        "Magia": "Armamentista",
+        "Militar": "Alquimia e armas químicas",
+        "Religião": "Monoteísta (Kelemvor)",
+        "Território": "Médio",
+        "Bioma": "Pantanal",
+        "Raça predominante": "Yuan-ti e Lizardfolk"
+      },
+      "segredos": []
+    },
+    {
+      "id": "kok",
+      "nome": "Vila Kokoriko",
+      "lema": "Uma ilha de halflings e harengons",
+      "cor": "#e58ab8",
+      "mapa": {
+        "x": 47,
+        "y": 7
+      },
+      "capital": "Comunidade sem líder",
+      "imagem": "assets/images/regioes/kok.jpg",
+      "bioma": "waves",
+      "historia": [
+        "Duas comunidades que viraram uma só pela falta de espaço e pela boa vizinhança. Halflings e Harengons somam milhares numa ilha pequena e temem o dia em que ela não comportará todos. Vivem de agricultura e pesca e evitam negócios, com medo de atrair atenção. Não têm líder: a opinião de todos pesa, do mais novo ao ancião."
+      ],
+      "figuras": [],
+      "resumo": {
+        "Política": "Comunidade",
+        "Tecnologia": "Medieval",
+        "Economia": "Baixa",
+        "Magia": "Brincadeira",
+        "Militar": "Baixo",
+        "Religião": "Politeísta",
+        "Território": "Minúsculo",
+        "Bioma": "Planície temperada",
+        "Raça predominante": "Halflings e Harengons"
+      },
+      "segredos": []
+    },
+    {
+      "id": "mer",
+      "nome": "Ilhas Mercantis",
+      "lema": "A base neutra dos aventureiros",
+      "cor": "#cfc4a8",
+      "mapa": {
+        "x": 38,
+        "y": 48
+      },
+      "capital": "Sem lei, sem regente",
+      "imagem": "assets/images/regioes/mer.jpg",
+      "bioma": "waves",
+      "historia": [
+        "Uma ilha achada por aventureiros e transformada em base neutra para trocar ideias, negociar e descansar. Virou cidade autossuficiente, com muitas tavernas e um mercado onde se acha de tudo, legal ou não."
+      ],
+      "figuras": [],
+      "resumo": {
+        "Política": "Associação de mercadores",
+        "Tecnologia": "Medieval",
+        "Economia": "Alta",
+        "Magia": "Livre",
+        "Militar": "Sem exército",
+        "Religião": "Politeísta",
+        "Território": "Minúsculo",
+        "Bioma": "Tropical",
+        "Raça predominante": "Não possui"
+      },
+      "segredos": []
+    }
+  ]
+}

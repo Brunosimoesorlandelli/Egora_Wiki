@@ -1,0 +1,312 @@
+{
+  "personagens": [
+    {
+      "id": "sahib-abu-simbel",
+      "nome": "Sahib Abu-Simbel",
+      "papel": "Sultão · Luz",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/sahib-abu-simbel.jpg"
+    },
+    {
+      "id": "akesa",
+      "nome": "Akesa",
+      "papel": "A grande mãe · Vida",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/akesa.jpg"
+    },
+    {
+      "id": "zephyr",
+      "nome": "Zephyr",
+      "papel": "Herdeiro · Ar",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/zephyr.jpg"
+    },
+    {
+      "id": "sigmis",
+      "nome": "Sigmis",
+      "papel": "Guerreiro primogênito · Fogo",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/sigmis.jpg"
+    },
+    {
+      "id": "azure",
+      "nome": "Azure",
+      "papel": "A filha enigmática · Água",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/azure.jpg"
+    },
+    {
+      "id": "nuit",
+      "nome": "Núit",
+      "papel": "A mais cobiçada · Terra",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/nuit.jpg"
+    },
+    {
+      "id": "thawe",
+      "nome": "Thawe",
+      "papel": "O rebelde desaparecido · Sombra",
+      "regiao": "sar",
+      "imagem": "assets/images/personagens/thawe.jpg"
+    },
+    {
+      "id": "arturus-ravalon",
+      "nome": "Arturus Ravalon",
+      "papel": "Antigo rei (falecido)",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/arturus-ravalon.jpg"
+    },
+    {
+      "id": "guinevere-ravalon",
+      "nome": "Guinevere Ravalon",
+      "papel": "Rainha",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/guinevere-ravalon.jpg"
+    },
+    {
+      "id": "mordred-ravalon",
+      "nome": "Mordred Ravalon",
+      "papel": "Cavaleiro · família real",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/mordred-ravalon.jpg"
+    },
+    {
+      "id": "gaheris-ravalon",
+      "nome": "Gaheris Ravalon",
+      "papel": "Cavaleiro · família real",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/gaheris-ravalon.jpg"
+    },
+    {
+      "id": "gareth-ravalon",
+      "nome": "Gareth Ravalon",
+      "papel": "Cavaleiro · família real",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/gareth-ravalon.jpg"
+    },
+    {
+      "id": "perzival-lonedream",
+      "nome": "Perzival Lonedream",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/perzival-lonedream.jpg"
+    },
+    {
+      "id": "lancelot-prideheart",
+      "nome": "Lancelot Prideheart",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/lancelot-prideheart.jpg"
+    },
+    {
+      "id": "boors-wiseguides",
+      "nome": "Boors Wiseguides",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/boors-wiseguides.jpg"
+    },
+    {
+      "id": "tristam-sunchase",
+      "nome": "Tristam Sunchase",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/tristam-sunchase.jpg"
+    },
+    {
+      "id": "kay-braveroar",
+      "nome": "Kay Braveroar",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/kay-braveroar.jpg"
+    },
+    {
+      "id": "lamorak-lightdrifter",
+      "nome": "Lamorak Lightdrifter",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/lamorak-lightdrifter.jpg"
+    },
+    {
+      "id": "bedivere-fiercewind",
+      "nome": "Bedivere Fiercewind",
+      "papel": "Cavaleiro (falecido)",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/bedivere-fiercewind.jpg"
+    },
+    {
+      "id": "gawain-silentstride",
+      "nome": "Gawain Silentstride",
+      "papel": "Cavaleiro",
+      "regiao": "rav",
+      "imagem": "assets/images/personagens/gawain-silentstride.jpg"
+    },
+    {
+      "id": "magnus-morelli",
+      "nome": "Magnus Morelli",
+      "papel": "O atual Ingrar",
+      "regiao": "cal",
+      "imagem": "assets/images/personagens/magnus-morelli.jpg"
+    },
+    {
+      "id": "balchang-bohm",
+      "nome": "Balchang Böhm",
+      "papel": "Antigo rei (falecido)",
+      "regiao": "dra",
+      "imagem": "assets/images/personagens/balchang-bohm.jpg"
+    },
+    {
+      "id": "nyaxol-weiss",
+      "nome": "Nyaxol Weiss",
+      "papel": "Conselheira de Balchang",
+      "regiao": "dra",
+      "imagem": "assets/images/personagens/nyaxol-weiss.jpg"
+    },
+    {
+      "id": "drogor-konig",
+      "nome": "Drogor König",
+      "papel": "Rei",
+      "regiao": "dra",
+      "imagem": "assets/images/personagens/drogor-konig.jpg"
+    },
+    {
+      "id": "korgak-gurukk",
+      "nome": "Korgak Gurukk",
+      "papel": "Líder dos Rochedos",
+      "regiao": "erm",
+      "imagem": "assets/images/personagens/korgak-gurukk.jpg"
+    },
+    {
+      "id": "ghoghoth-nornoth",
+      "nome": "Ghoghoth Nornoth",
+      "papel": "Líder dos Carniceiros",
+      "regiao": "erm",
+      "imagem": "assets/images/personagens/ghoghoth-nornoth.jpg"
+    },
+    {
+      "id": "shokrun-gnash",
+      "nome": "Shokrun Gnash",
+      "papel": "Líder dos Escavadores",
+      "regiao": "erm",
+      "imagem": "assets/images/personagens/shokrun-gnash.jpg"
+    },
+    {
+      "id": "kuovea-geanatho",
+      "nome": "Kuovea Geanatho",
+      "papel": "Líder dos Filhos do Gelo",
+      "regiao": "erm",
+      "imagem": "assets/images/personagens/kuovea-geanatho.jpg"
+    },
+    {
+      "id": "corhim-cobblegem",
+      "nome": "Corhim Cobblegem",
+      "papel": "Comitê",
+      "regiao": "ned",
+      "imagem": "assets/images/personagens/corhim-cobblegem.jpg"
+    },
+    {
+      "id": "salomon-volcano",
+      "nome": "Salomon Volcano",
+      "papel": "Comitê · Genasi de fogo",
+      "regiao": "ned",
+      "imagem": "assets/images/personagens/salomon-volcano.jpg"
+    },
+    {
+      "id": "urixius-ego-malexikas",
+      "nome": "Urixius “Ego” Malexikas",
+      "papel": "Comitê",
+      "regiao": "ned",
+      "imagem": "assets/images/personagens/urixius-ego-malexikas.jpg"
+    },
+    {
+      "id": "zuk-ridmore",
+      "nome": "Zuk Ridmore",
+      "papel": "Comitê · diretora da Ridmore",
+      "regiao": "ned",
+      "imagem": "assets/images/personagens/zuk-ridmore.jpg"
+    },
+    {
+      "id": "kistroli-icemantle",
+      "nome": "Kistroli Icemantle",
+      "papel": "Rei",
+      "regiao": "kha",
+      "imagem": "assets/images/personagens/kistroli-icemantle.jpg"
+    },
+    {
+      "id": "thizael-icemantle",
+      "nome": "Thizael Icemantle",
+      "papel": "Primogênito",
+      "regiao": "kha",
+      "imagem": "assets/images/personagens/thizael-icemantle.jpg"
+    },
+    {
+      "id": "adalyn-nagalnath",
+      "nome": "Adalyn Nagalnath",
+      "papel": "A Zyanya",
+      "regiao": "tot",
+      "imagem": "assets/images/personagens/adalyn-nagalnath.jpg"
+    },
+    {
+      "id": "cho-seung-hyeon",
+      "nome": "Ch’o Seung-Hyeon",
+      "papel": "Nozumo Shizukesa",
+      "regiao": "iqu",
+      "imagem": "assets/images/personagens/cho-seung-hyeon.jpg"
+    },
+    {
+      "id": "general-gao-feng",
+      "nome": "General Gao Feng",
+      "papel": "Nozumo Ikari · leonino",
+      "regiao": "iqu",
+      "imagem": "assets/images/personagens/general-gao-feng.jpg"
+    },
+    {
+      "id": "zhan-guanyu",
+      "nome": "Zhan Guanyu",
+      "papel": "Nozumo Shinrai",
+      "regiao": "iqu",
+      "imagem": "assets/images/personagens/zhan-guanyu.jpg"
+    },
+    {
+      "id": "mitsugu-kuma",
+      "nome": "Mitsugu Kuma",
+      "papel": "Nozumo Ai",
+      "regiao": "iqu",
+      "imagem": "assets/images/personagens/mitsugu-kuma.jpg"
+    },
+    {
+      "id": "lulong",
+      "nome": "Lulong",
+      "papel": "Nozumo Nigami",
+      "regiao": "iqu",
+      "imagem": "assets/images/personagens/lulong.jpg"
+    },
+    {
+      "id": "fenxalim-lolthastro",
+      "nome": "Fen’Xalim Lolthastro",
+      "papel": "Líder Aldatir · Gavião Branco",
+      "regiao": "flo",
+      "imagem": "assets/images/personagens/fenxalim-lolthastro.jpg"
+    },
+    {
+      "id": "bokbok",
+      "nome": "Bok’bok",
+      "papel": "Líder da tribo Kino",
+      "regiao": "flo",
+      "imagem": "assets/images/personagens/bokbok.jpg"
+    },
+    {
+      "id": "balthazar-loch",
+      "nome": "Balthazar Loch",
+      "papel": "Líder dos Nefastos",
+      "regiao": "rig",
+      "imagem": "assets/images/personagens/balthazar-loch.jpg"
+    },
+    {
+      "id": "dr-velhari-valzuun",
+      "nome": "Dr. Velhari Val’zuun",
+      "papel": "Cientista · criador da Praga",
+      "regiao": "rig",
+      "imagem": "assets/images/personagens/dr-velhari-valzuun.jpg"
+    }
+  ]
+}

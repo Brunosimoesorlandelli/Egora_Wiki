@@ -1,0 +1,77 @@
+{
+  "nota": "O PDF só dá datas relativas, então a ordem dos eventos “sem data” é aproximada.",
+  "linhaDoTempo": [
+    {
+      "quando": "Era primordial",
+      "titulo": "Os dez dragões moldam o mundo",
+      "texto": "Antes de tudo e todos, os 10 dragões primordiais moldaram o mundo, e toda a magia deste plano nasce deles.",
+      "regiao": "dra"
+    },
+    {
+      "quando": "Tempos lendários",
+      "titulo": "Egora era um só continente",
+      "texto": "Segundo as lendas, o Leviatã separou as regiões com seus ataques. Os tritões o aprisionaram e o vigiam há centenas de anos.",
+      "regiao": "tot"
+    },
+    {
+      "quando": "Tempos antigos",
+      "titulo": "Kossuth seca Sarabadh",
+      "texto": "O deus do fogo consumiu a região com lava. Silvanus, a pedido de uma jovem druida, apenas amenizou o estrago.",
+      "regiao": "sar"
+    },
+    {
+      "quando": "Passado (sem data)",
+      "titulo": "A partição de Ravalon",
+      "texto": "A guerra dividiu terras e famílias, com a traição do filho mais velho e a morte do rei Arturus.",
+      "regiao": "rav"
+    },
+    {
+      "quando": "Passado (sem data)",
+      "titulo": "O golpe dos Vendados e o nascimento de Calim",
+      "texto": "Após o golpe do grupo religioso, as terras devastadas foram abandonadas por Ravalon e tomadas pela Igreja de Tyr.",
+      "regiao": "cal"
+    },
+    {
+      "quando": "Passado (sem data)",
+      "titulo": "A queda dos Nigami",
+      "texto": "Rexicas matou dois Nozumos numa reunião e morreu pelas mãos da Nozumo do clã Ai. Os Nigami foram exilados na Ilha Unmei.",
+      "regiao": "iqu"
+    },
+    {
+      "quando": "Há cerca de 25 anos",
+      "titulo": "Morre Balchang Böhm",
+      "texto": "Sem herdeiro, o trono foi decidido numa votação suspeita que elegeu Drogor König.",
+      "regiao": "dra"
+    },
+    {
+      "quando": "Nos últimos 10 anos",
+      "titulo": "Drachenberg se expande",
+      "texto": "O reino conquista territórios e vira um perigo para o resto do mundo.",
+      "regiao": "dra"
+    },
+    {
+      "quando": "Há cerca de 2 anos",
+      "titulo": "Thawe desaparece",
+      "texto": "O príncipe sumiu após uma briga com o pai pelo trono; a família o procura desde então.",
+      "regiao": "sar"
+    },
+    {
+      "quando": "Há menos de 2 anos",
+      "titulo": "Zhan Guanyu vira Nozumo",
+      "texto": "Ele assumiu o cargo de Shinrai após a morte do pai, e rumores o cercam.",
+      "regiao": "iqu"
+    },
+    {
+      "quando": "Atualmente",
+      "titulo": "Os Emergidos chegam à superfície",
+      "texto": "Os tritões vieram reduzir a exploração mágica, enquanto os selos do Leviatã enfraquecem e surgem piratas e a Patrulha Pérola.",
+      "regiao": "tot"
+    },
+    {
+      "quando": "Atualmente",
+      "titulo": "Rigor Mortis, inimigo do mundo",
+      "texto": "Com os Nefastos e a Praga, o mundo vive uma guerra fria e ninguém comercia com a região.",
+      "regiao": "rig"
+    }
+  ]
+}

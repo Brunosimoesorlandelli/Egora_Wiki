@@ -1,0 +1,106 @@
+{
+  "panteao": [
+    {
+      "nivel": "Deuses Maiores",
+      "deuses": [
+        {
+          "nome": "Bane",
+          "dominio": "ódio, tirania, medo"
+        },
+        {
+          "nome": "Chauntea",
+          "dominio": "agricultura"
+        },
+        {
+          "nome": "Cyric",
+          "dominio": "mentira, ilusão"
+        },
+        {
+          "nome": "Kelemvor",
+          "dominio": "os mortos"
+        },
+        {
+          "nome": "Kossuth",
+          "dominio": "fogo elemental"
+        },
+        {
+          "nome": "Lathander",
+          "dominio": "renovação, amanhecer"
+        },
+        {
+          "nome": "Mystra",
+          "dominio": "magia"
+        },
+        {
+          "nome": "Oghma",
+          "dominio": "bardos, conhecimento"
+        },
+        {
+          "nome": "Shar",
+          "dominio": "escuridão, segredos"
+        },
+        {
+          "nome": "Silvanus",
+          "dominio": "natureza selvagem"
+        },
+        {
+          "nome": "Sune",
+          "dominio": "beleza, amor"
+        },
+        {
+          "nome": "Talos",
+          "dominio": "tempestade, destruição"
+        },
+        {
+          "nome": "Tempus",
+          "dominio": "guerra, batalha"
+        },
+        {
+          "nome": "Tyr",
+          "dominio": "justiça"
+        }
+      ]
+    },
+    {
+      "nivel": "Deuses Menores",
+      "deuses": [
+        {
+          "nome": "Helm",
+          "dominio": "guardiões"
+        },
+        {
+          "nome": "Lolth",
+          "dominio": "drows, aranhas"
+        },
+        {
+          "nome": "Mielikki",
+          "dominio": "florestas"
+        },
+        {
+          "nome": "Tymora",
+          "dominio": "boa sorte"
+        },
+        {
+          "nome": "Moradin",
+          "dominio": "anões, forja"
+        },
+        {
+          "nome": "Corellon Larethian",
+          "dominio": "elfos"
+        },
+        {
+          "nome": "Garl Ouro Brilhante",
+          "dominio": "gnomos"
+        },
+        {
+          "nome": "Yondalla",
+          "dominio": "halflings"
+        },
+        {
+          "nome": "Gruumsh",
+          "dominio": "orcs"
+        }
+      ]
+    }
+  ]
+}

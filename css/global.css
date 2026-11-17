@@ -1,0 +1,80 @@
+/* Egora Wiki — estilos globais
+   Variáveis (tema escuro padrão), reset, tipografia base, foco, acessibilidade e movimento reduzido. */
+:root {
+  color-scheme:dark;
+  --bg:#0a0a0c;
+  --bg2:#14141a;
+  --ink:#e8e2d0;
+  --mut:#9a9486;
+  --gold:#c8aa6e;
+  --line:#3a3426;
+  --acc:#c8aa6e;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html {
+  scroll-padding-top:calc(env(safe-area-inset-top,0px) + 56px);
+  scroll-behavior:smooth;
+}
+* {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:17px/1.6 Spectral,Georgia,serif;
+}
+h1,h2,h3,nav,.cap,button {
+  font-family:Cinzel,Georgia,serif;
+}
+.cap {
+  letter-spacing:.3em;
+  font-size:13px;
+  text-transform:uppercase;
+  color:var(--gold);
+}
+h2 {
+  font-size:clamp(26px,5vw,38px);
+  letter-spacing:.08em;
+  margin:0 0 6px;
+  color:var(--gold);
+}
+.sub {
+  color:var(--mut);
+  margin:0 0 28px;
+}
+li {
+  margin:4px 0;
+}
+:focus-visible {
+  outline:2px solid var(--gold);
+  outline-offset:2px;
+}
+.sk {
+  position:absolute;
+  left:-999px;
+  top:0;
+  z-index:30;
+  background:var(--gold);
+  color:#000;
+  padding:10px 16px;
+}
+.sk:focus {
+  left:8px;
+  top:8px;
+}
+@keyframes up {
+  from { opacity:0; transform:translateY(18px) }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html {
+    scroll-behavior:auto;
+  }
+  *,*::before {
+    animation:none!important;
+    transition:none!important;
+  }
+}

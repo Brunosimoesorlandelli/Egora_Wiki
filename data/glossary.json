@@ -1,0 +1,146 @@
+{
+  "glossario": [
+    {
+      "id": "nozumo",
+      "termo": "Nozumo",
+      "definicao": "Representante de um dos Grandes Clãs de Iqun. Cada um responde pelo clã e pelo país, e todos se reúnem todo mês.",
+      "regiao": "iqu",
+      "variacoes": [
+        "Nozumos"
+      ]
+    },
+    {
+      "id": "vendados",
+      "termo": "Vendados",
+      "definicao": "Nome dos fiéis de Tyr, em alusão à justiça cega do deus. Também é o grupo religioso cujo golpe levou à criação de Calim.",
+      "regiao": "cal",
+      "variacoes": [
+        "Vendado"
+      ]
+    },
+    {
+      "id": "ingrar",
+      "termo": "Ingrar",
+      "definicao": "Líder religioso da Igreja de Tyr. Ao assumir o cargo, cega os dois olhos para aplicar a justiça pura.",
+      "regiao": "cal",
+      "variacoes": []
+    },
+    {
+      "id": "justicares",
+      "termo": "Justicares",
+      "definicao": "Sete guerreiros de Tyr, cada um com o título de um pecado, que “educam” quem o pratica.",
+      "regiao": "cal",
+      "variacoes": [
+        "Justicar"
+      ]
+    },
+    {
+      "id": "nefastos",
+      "termo": "Nefastos",
+      "definicao": "Mortos-vivos racionais de Rigor Mortis, criados pela exposição ao Arsênio. Não se regeneram, mas podem viver sem alguns órgãos.",
+      "regiao": "rig",
+      "variacoes": [
+        "Nefasto"
+      ]
+    },
+    {
+      "id": "praga",
+      "termo": "Praga",
+      "definicao": "Fórmula do Dr. Velhari Val’zuun que acelera os efeitos do Arsênio e transforma alguém em Nefasto em poucas horas.",
+      "regiao": "rig",
+      "variacoes": []
+    },
+    {
+      "id": "arsenio",
+      "termo": "Arsênio",
+      "definicao": "Metal tóxico que se expande em contato com a água e contamina tudo ao redor. Também serve à medicina, à agricultura e à construção.",
+      "regiao": "rig",
+      "variacoes": []
+    },
+    {
+      "id": "emergidos",
+      "termo": "Emergidos",
+      "definicao": "Nome que os terrestres deram aos tritões de Tototemoc, que emergiram do fundo do oceano.",
+      "regiao": "tot",
+      "variacoes": [
+        "Emergido"
+      ]
+    },
+    {
+      "id": "zyanya",
+      "termo": "Zyanya",
+      "definicao": "Título da imperatriz dos tritões. A atual é Adalyn Nagalnath.",
+      "regiao": "tot",
+      "variacoes": []
+    },
+    {
+      "id": "leviata",
+      "termo": "Leviatã",
+      "definicao": "Monstro que as lendas dizem ter separado o continente. Os tritões o vigiam, mas os selos que o prendem perdem força.",
+      "regiao": "tot",
+      "variacoes": []
+    },
+    {
+      "id": "patrulha",
+      "termo": "Patrulha Pérola",
+      "definicao": "Organização criada pela Zyanya para vigiar os mares e conter a exploração marítima e a pirataria.",
+      "regiao": "tot",
+      "variacoes": []
+    },
+    {
+      "id": "cromaguarda",
+      "termo": "Cromaguarda",
+      "definicao": "Grupo radical liderado por Drogor König que prega a superioridade dos draconatos sobre as outras raças.",
+      "regiao": "dra",
+      "variacoes": []
+    },
+    {
+      "id": "dragoes",
+      "termo": "Dragões primordiais",
+      "definicao": "Os 10 dragões que moldaram o mundo e originaram toda a magia, divididos em metálicos e cromáticos.",
+      "regiao": "dra",
+      "variacoes": [
+        "dragões primordiais"
+      ]
+    },
+    {
+      "id": "makays",
+      "termo": "Makays",
+      "definicao": "Força-tarefa de Nédelamagie que fiscaliza, previne, investiga e controla problemas mágicos.",
+      "regiao": "ned",
+      "variacoes": [
+        "Makay"
+      ]
+    },
+    {
+      "id": "comite",
+      "termo": "Comitê",
+      "definicao": "Grupo oligárquico de líderes que determina as leis e a ordem de Nédelamagie.",
+      "regiao": "ned",
+      "variacoes": []
+    },
+    {
+      "id": "jarins",
+      "termo": "Jarins",
+      "definicao": "Povo de olhos dourados do deserto de Sarabadh, que domina serpentes, escaravelhos e escorpiões gigantes.",
+      "regiao": "sar",
+      "variacoes": [
+        "Jarin"
+      ]
+    },
+    {
+      "id": "insurgentes",
+      "termo": "Insurgentes",
+      "definicao": "Revolucionários de Kham Buldor, com uma mão congelada como símbolo, que querem impor a democracia para definir o novo rei.",
+      "regiao": "kha",
+      "variacoes": []
+    },
+    {
+      "id": "petala",
+      "termo": "Última Pétala",
+      "definicao": "Grupo de kunoichis do clã Ai que protege o equilíbrio da magia das cerejeiras.",
+      "regiao": "iqu",
+      "variacoes": []
+    }
+  ]
+}

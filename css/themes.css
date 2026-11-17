@@ -1,0 +1,47 @@
+/* Egora Wiki — temas
+   Tema claro automático (prefers-color-scheme) e temas manuais: claro e steampunk. */
+
+@media (prefers-color-scheme:light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme:light;
+    --bg:#f4efe2;
+    --bg2:#fffaf0;
+    --ink:#1d1a14;
+    --mut:#6b6455;
+    --gold:#8a6a1f;
+    --line:#cdbf9b;
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme:light;
+  --bg:#f4efe2;
+  --bg2:#fffaf0;
+  --ink:#1d1a14;
+  --mut:#6b6455;
+  --gold:#8a6a1f;
+  --line:#cdbf9b;
+}
+:root[data-theme="steam"] {
+  color-scheme:dark;
+  --bg:#17100a;
+  --bg2:#251a10;
+  --ink:#efdcb9;
+  --mut:#b09a72;
+  --gold:#d08c3a;
+  --line:#5e4125;
+  --acc:#d08c3a;
+}
+:root[data-theme="steam"] body {
+  background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23d08c3a' stroke-opacity='.07' stroke-width='6'%3E%3Ccircle cx='60' cy='60' r='30' stroke-dasharray='6 6'/%3E%3Ccircle cx='60' cy='60' r='20' stroke-width='3'/%3E%3Ccircle cx='60' cy='60' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+:root[data-theme="steam"] :is(.card,.pc,.ce,.gi,.map,.tier) {
+  border-color:var(--gold);
+  box-shadow:inset 0 0 0 3px var(--bg),inset 0 0 0 4px var(--line);
+}
+:root[data-theme="steam"] .map img {
+  filter:sepia(.55) saturate(.9);
+}
+:root[data-theme="steam"] h2 {
+  text-shadow:0 0 18px #d08c3a55;
+}

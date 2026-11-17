@@ -1,0 +1,116 @@
+{
+  "relacoes": {
+    "sar": {
+      "aliados": [
+        "ned"
+      ],
+      "inimigos": [
+        "rig"
+      ]
+    },
+    "rav": {
+      "aliados": [
+        "kha"
+      ],
+      "inimigos": [
+        "cal",
+        "rig"
+      ]
+    },
+    "cal": {
+      "aliados": [
+        "iqu"
+      ],
+      "inimigos": [
+        "rav",
+        "dra",
+        "rig"
+      ]
+    },
+    "dra": {
+      "aliados": [],
+      "inimigos": [
+        "cal",
+        "kha",
+        "rig"
+      ]
+    },
+    "erm": {
+      "aliados": [],
+      "inimigos": [
+        "rig"
+      ]
+    },
+    "ned": {
+      "aliados": [
+        "sar",
+        "iqu"
+      ],
+      "inimigos": [
+        "tot",
+        "kha",
+        "rig"
+      ]
+    },
+    "kha": {
+      "aliados": [
+        "rav"
+      ],
+      "inimigos": [
+        "dra",
+        "ned",
+        "rig"
+      ]
+    },
+    "tot": {
+      "aliados": [
+        "flo"
+      ],
+      "inimigos": [
+        "ned",
+        "rig"
+      ]
+    },
+    "iqu": {
+      "aliados": [
+        "flo",
+        "cal",
+        "ned"
+      ],
+      "inimigos": [
+        "rig"
+      ]
+    },
+    "flo": {
+      "aliados": [
+        "iqu"
+      ],
+      "inimigos": [
+        "rig"
+      ]
+    },
+    "rig": {
+      "aliados": [],
+      "inimigos": [
+        "Todos os outros"
+      ]
+    },
+    "kok": {
+      "aliados": [],
+      "inimigos": [
+        "rig"
+      ]
+    },
+    "mer": {
+      "aliados": [],
+      "inimigos": [
+        "rig"
+      ]
+    }
+  },
+  "diagrama": {
+    "inimigoComum": "rig",
+    "legendaInimigoComum": "em guerra fria com todos",
+    "nota": "Kokoriko e Ilhas Mercantis não têm aliados nem rivais, só o inimigo comum. Passe o mouse num reino para isolar suas relações."
+  }
+}

@@ -1,0 +1,97 @@
+/* Egora Wiki — impressão
+   Regras @media print (impressão da página de região). */
+
+@media print {
+  body {
+    background:#fff!important;
+    color:#000!important;
+    overflow:visible!important;
+  }
+  body:has(#v.on)>*:not(#v) {
+    display:none!important;
+  }
+  nav {
+    display:none!important;
+  }
+  .sk {
+    display:none!important;
+  }
+  #sr {
+    display:none!important;
+  }
+  .x {
+    display:none!important;
+  }
+  .zb {
+    display:none!important;
+  }
+  .noprint {
+    display:none!important;
+  }
+  .rn {
+    display:none!important;
+  }
+  .sbtn {
+    display:none!important;
+  }
+  .tabs {
+    display:none!important;
+  }
+  #v.on {
+    position:static!important;
+    overflow:visible!important;
+    background:#fff!important;
+  }
+  .ban {
+    height:160px;
+    min-height:0;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+  .ban::before {
+    inset:0!important;
+    transform:none!important;
+  }
+  .ban::after {
+    background:none!important;
+  }
+  .body {
+    background:none!important;
+    display:block!important;
+  }
+  .body * {
+    color:#000!important;
+    animation:none!important;
+  }
+  .body>* {
+    break-inside:avoid;
+  }
+  aside {
+    break-inside:avoid;
+  }
+  .ce {
+    border-color:#999!important;
+    background:#fff!important;
+    box-shadow:none!important;
+  }
+  .tags span {
+    border-color:#999!important;
+    background:#fff!important;
+    box-shadow:none!important;
+  }
+  .tags a {
+    border-color:#999!important;
+    background:#fff!important;
+    box-shadow:none!important;
+  }
+  dl {
+    background:#fff!important;
+  }
+  .tp[hidden] {
+    display:block!important;
+  }
+  .rv {
+    opacity:1!important;
+    transform:none!important;
+  }
+}
