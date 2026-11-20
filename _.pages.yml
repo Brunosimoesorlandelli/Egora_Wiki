@@ -1,0 +1,160 @@
+# Pages CMS — Egora Wiki (https://pagescms.org)
+# Edita os JSON de data/ por formulários; cada salvamento vira um commit.
+media:
+  input: assets/images
+  output: assets/images
+
+content:
+  - name: regions
+    label: Regiões
+    type: file
+    path: data/regions.json
+    format: json
+    fields:
+      - name: camposResumo
+        label: Campos do resumo (ordem do quadro)
+        type: string
+        list: true
+      - name: regioes
+        label: Regiões
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Id (não mudar), type: string, required: true }
+          - { name: nome, label: Nome, type: string, required: true }
+          - { name: lema, label: Lema, type: string }
+          - { name: cor, label: Cor, type: string, description: "Hex, ex.: #e0707f" }
+          - name: mapa
+            label: Posição no mapa (0-100)
+            type: object
+            fields:
+              - { name: x, label: X, type: number }
+              - { name: y, label: Y, type: number }
+          - { name: capital, label: Capital, type: string }
+          - { name: imagem, label: Imagem, type: string, description: "Ex.: assets/images/regioes/sar.jpg" }
+          - name: bioma
+            label: Bioma (fundo da página)
+            type: select
+            options:
+              values: [dunes, plains, peaks, frost, waves, forest, swamp]
+          - { name: historia, label: História (um parágrafo por item), type: text, list: true }
+          - { name: figuras, label: Figuras de destaque, type: string, list: true }
+          - name: resumo
+            label: Resumo
+            type: object
+            fields:
+              - { name: Política, type: string }
+              - { name: Tecnologia, type: string }
+              - { name: Economia, type: string }
+              - { name: Magia, type: string }
+              - { name: Militar, type: string }
+              - { name: Religião, type: string }
+              - { name: Território, type: string }
+              - { name: Bioma, type: string }
+              - { name: Raça predominante, type: string }
+          - { name: segredos, label: Segredos (Modo Mestre), type: text, list: true }
+          - name: abas
+            label: Abas internas
+            type: object
+            list: true
+            fields:
+              - { name: titulo, label: Título, type: string }
+              - { name: introducao, label: Introdução, type: text }
+              - name: cartoes
+                label: Cartões
+                type: object
+                list: true
+                fields:
+                  - { name: nome, type: string }
+                  - { name: etiqueta, type: string }
+                  - { name: texto, type: text }
+
+  - name: characters
+    label: Personagens
+    type: file
+    path: data/characters.json
+    format: json
+    fields:
+      - name: personagens
+        label: Personagens
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Id (igual ao nome do arquivo da imagem), type: string, required: true }
+          - { name: nome, type: string, required: true }
+          - { name: papel, type: string }
+          - name: regiao
+            label: Região
+            type: select
+            options:
+              values: [sar, rav, cal, dra, erm, ned, kha, tot, iqu, flo, rig, kok, mer]
+          - { name: imagem, type: image }
+
+  - name: glossary
+    label: Glossário
+    type: file
+    path: data/glossary.json
+    format: json
+    fields:
+      - name: glossario
+        label: Termos
+        type: object
+        list: true
+        fields:
+          - { name: id, type: string, required: true }
+          - { name: termo, type: string, required: true }
+          - { name: definicao, label: Definição, type: text }
+          - name: regiao
+            label: Região
+            type: select
+            options:
+              values: [sar, rav, cal, dra, erm, ned, kha, tot, iqu, flo, rig, kok, mer]
+          - { name: variacoes, label: Variações (para links automáticos), type: string, list: true }
+
+  - name: pantheon
+    label: Panteão
+    type: file
+    path: data/pantheon.json
+    format: json
+    fields:
+      - name: panteao
+        label: Níveis
+        type: object
+        list: true
+        fields:
+          - { name: nivel, label: Nível, type: string }
+          - name: deuses
+            type: object
+            list: true
+            fields:
+              - { name: nome, type: string }
+              - { name: dominio, label: Domínio, type: string }
+
+  - name: races
+    label: Raças
+    type: file
+    path: data/races.json
+    format: json
+    fields:
+      - { name: racas, label: Raças, type: string, list: true }
+
+  - name: timeline
+    label: Linha do tempo
+    type: file
+    path: data/timeline.json
+    format: json
+    fields:
+      - { name: nota, type: text }
+      - name: linhaDoTempo
+        label: Eventos
+        type: object
+        list: true
+        fields:
+          - { name: quando, label: Quando, type: string }
+          - { name: titulo, label: Título, type: string }
+          - { name: texto, type: text }
+          - name: regiao
+            label: Região
+            type: select
+            options:
+              values: [sar, rav, cal, dra, erm, ned, kha, tot, iqu, flo, rig, kok, mer]
